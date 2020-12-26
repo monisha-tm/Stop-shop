@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DairyProducts</title>
+ <style>
+    body {
+    background-color : #484848;
+    margin: 0;
+    padding: 0;
+}
+.container{
+	width: 320px;
+	height: 450px;
+	background-image: url("http://localhost/img1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+	color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 40px 20px; 
+}
+h1{
+	margin: 0;
+	padding: 0 0 30px;
+	font-size: 30px;
+	color : black;
+    text-align : center;
+    font-family: serif;
+    font-style: italic;
+    font-weight: bold;
+}
+form {
+    width: 300px;
+    margin: 0 auto;
+    color: darkblue;
+    font-size: 20px;
+    float: left;
+	outline: none;
+	background: transparent;
+}
+.container input[type="submit"]
+{
+	border: none;
+	background: black;
+	outline: none;
+	height: 30px;
+	color: #fff;
+	font-size: 16px;
+	border-radius: 20px;
+}
+ </style>
+
+</head>
+<body background='http://localhost/image4.jpg'>
+	<div class="container">
+
+	<h1>Add Dairy Products</h1>
+<form method="post" action="dairy.php">
+Product_id :<input type="varchar(11)" name="Product_id"><br><br>
+Product_name :<input type="text" name="Product_name"><br><br>
+Product_price:<input type="varchar(20)" name="Product_price"><br><br>
+Company:<input type="text" name="Product_company"><br><br>
+Product_image:<input type="file" name="Product_image"><br><br>
+<div align="center">
+<input  type="submit" value="Add Item">
+</div>
+
+</form>
+</div>
+</body>
+</html>

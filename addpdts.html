@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Products</title>
+  <style>
+* {
+  box-sizing: border-box;
+}
+img{
+  border-radius: 50%;
+}
+.btn {
+color: #fff !important;
+text-transform: uppercase;
+text-decoration: none;
+background: #60a3bc;
+padding: 20px;
+width: 150px;
+border-radius: 50px;
+display: inline-block;
+border: none;
+transition: all 0.4s ease 0s;
+}
+.btn:hover {
+text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+
+}
+</style>
+</head>
+<body background='http://localhost/image8.jpg'>
+<div class="row">
+  <div class="column">
+    <img src="http://localhost/dairy.jpg"  width=300 height=200>
+    <br><button class="btn" onclick="window.location.href = 'http://localhost/dairy.html';">Add items</button>  <button class="btn" onclick="window.location.href = 'http://localhost/';">View items</button>
+ </div>
+  <div class="column">
+    <img src="http://localhost/fruits&veggies.jpeg"  width=300 height=200>
+    <br><button class="btn" onclick="window.location.href = 'http://localhost/';">Add items</button>  <button class="btn" onclick="window.location.href ='http://localhost/';">View items</button>  </div>
+  <div class="column">
+    <img src="http://localhost/dryfruit1.jpg"  width=300 height=200>
+    <br><button class="btn" onclick="window.location.href = 'http://localhost/';">Add items</button>  <button class="btn" onclick="window.location.href = 'http://localhost/';">View items</button>
+  </div>
+  <div class="column">
+    <img src="http://localhost/flouroil1.jpg"  width=300 height=200>
+   <br> <button class="btn" onclick="window.location.href = 'http://localhost/';">Add items</button>  <button class="btn" onclick="window.location.href = 'http://localhost/';">View items</button>
+  </div>
+</div>
+<br><br><br><br><br><br><br>
+<div class="row">
+  <div class="column">
+    <img src="http://localhost/toiletries1.jpg"  width=300 height=200>
+   <br> <button class="btn" onclick="window.location.href = 'http://localhost/';">Add items</button>  <button class="btn" onclick="window.location.href = 'http://localhost/';">View items</button>
+  </div>
+  <div class="column">
+    <img src="http://localhost/others1.jpg"  width=300 height=200>
+   <br> <button class="btn" onclick="window.location.href = 'http://localhost/';">Add items</button>  <button class="btn" onclick="window.location.href = 'http://localhost/';">View items</button>
+  </div>
+  <div class="column" >
+    <img src="http://localhost/stock.jpg" width=300 height=200>
+   <br> <button class="btn" onclick="window.location.href = 'http://localhost/';" style="width: 300px;">View Stocks</button>  
+  </div>
+  <div class="column">
+    <img src="http://localhost/order.png"  width=300 height=200>
+   <br><button class="btn" onclick="window.location.href = 'http://localhost/';" style="width: 300px;">View Sales & Orders</button>  
+  </div>
+</div>
+</body>
+</html>
